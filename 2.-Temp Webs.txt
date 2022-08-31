@@ -1,0 +1,25 @@
+system design
+	- https://akshay-iyangar.github.io/system-design/
+
+LeetCode method
+	- https://github.com/youngyangyang04/leetcode-master
+
+百度网盘不限速下载方法（教程）
+	- https://bbs.oldmanemu.net/thread-18902.htm
+
+Online Courses
+	- Excel: https://www.1point3acres.com/bbs/thread-865652-1-1.html
+		第一套：Excel Skills for Business Specialization
+		https://www.coursera.org/specializations/excel
+		商务Excel技能专项课程，麦考瑞大学开设，共四门，评分4.9/5.0，基本上是最为精品的网课了，难度逐门提高，如果你只是想简单提高下自己的excel水平，刷完第一门就会很有收获，能一直坚持到最后可以让自己成为excel小高手，非常推荐；
+		第二套：Excel Skills for Data Analytics and Visualization Specialization
+		https://www.coursera.org/special ... ytics-visualization
+		数据分析与可视化Excel技能专项课程，麦考瑞大学开设，还是上一门课的两位老师讲，共三门，评分4.8，也是难得的精品课程，和上一套相比内容有所重复，主要是根据数据分析所需的技能对第一套的后三门进行了重新编排和增减，第一门讲招聘广告里常出现的lookup,pivot table等，以及数据清洁，能满足普通分析师职位excel技能要求；后面两门一个是讲做图，一个是相对高级也相对小众的power query,power pivot,DAX等，算是拔高的内容。如果你只是想要学习excel提高工作效率，学习第一套就够了，甚至不需要都学完，根据自己工作需要即可；如果你想快速掌握数据分析师的excel技能，那么学完这两套课程的第一课也就够了。
+		第三套：Excel Skills for Business Forecasting Specialization
+		https://www.coursera.org/special ... usiness-forecasting
+		商务预测Excel技能专项课程，还是麦考瑞大学开设，由前两套课程中的男老师讲，共三门，第一门讲时序分析，第二门讲线性回归，第三门讲判断式预测。这套课总体评分4.8，也仍然是精品，但整体内容量大概是前两套的4成左右，而且最后一门基本是水课，质量不高，而前两门在减量的情况下基本保持了前两套的水准，推荐有相关需要的学，对Excel技能提高没什么帮助。
+		
+		第四套：Business Statistics and Analysis Specialization
+		https://www.coursera.org/special ... s_term_optimization
+		商务统计学与商务分析专项课程，由大米大学（Rice University),开玩笑的，莱斯大学开设，一个秃头男讲，共五门，评分4.7，属于高质量课程，第一门讲pivot table 和look up,比较简略，没有之前的第一，二套讲得好；之后是统计学基础；第三门讲假设检验，深入浅出，学完可以具备用假设检验处理数据，解决实际问题的能力，而不是像大多数课程那样，仅仅告诉你假设检验怎么回事，非常推荐；第四们是线性回归，与第三套第二门撞车，最后是一个练习课，集中练习2-4中的内容，推荐想要学习假设检验的学一下，具备一定excel基础可以直接学第三门。
+		以上四套都提供了大量的练习巩固所学；都不教VBA，但部分课会少量提及。
