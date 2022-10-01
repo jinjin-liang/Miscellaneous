@@ -5,3 +5,61 @@ It's worth noting that it is possible to maintain current local commits by creat
 	git fetch --all
 	git reset --hard origin/master
 After this, all of the old commits will be kept in new-branch-to-save-current-commits.
+
+2. How to download single file? https://toulan.fun/handbook/download-a-sub-folder-from-github-repo.html
+	1. 本地电脑要有个 svn 客户端 linux 和 macOS 都自带 svn，直接在命令行终端里使用。 Windows 没有的话，可以装个 TortoiseSVN 或其它客户端。
+	2. 准备下载地址
+	   - 如果要下载的文件在仓库的 master 分支， 譬如地址是 `https://github.com/UserName/ProjectName/tree/master/ch01`， 将 `/tree/master/` 换成 `/trunk/`， 即 `https://github.com/UserName/ProjectName/trunk/ch01`
+	   - 如果不是 master 分支， 将 `/tree/` 改为 `/branches/`， 譬如 `https://github.com/UserName/ProjectName/tree/develop/ch01`， 修改后 `https://github.com/UserName/ProjectName/branches/develop/ch01`
+	3. 使用 `svn checkout` 命令下载
+		举例：`svn checkout https://github.com/UserName/ProjectName/trunk/ch01`
+		> 第一次使用的话, 可能会出现下面这个提示: `R)eject, accept (t)emporarily or accept (p)ermanently?` 输入 `P`
+	## 其他工具
+	- [DownGit](https://downgit.github.io/) Create GitHub Resource Download Link
+	- [GitZip](https://kinolien.github.io/gitzip/) make sub-folder/sub-directory of github repository as zip and download  
+
+3. Create an empty repository in your Github account online. To change the remote repository path in your local repository, use the commands below:
+		git remote -v 
+		git remote remove origin 
+		git remote add origin <https://github.com/<USERNAME>/<REPO_NAME>.git>
+		git branch -M master
+	
+	Once you have finished editing your code, you can push the local repository to your Github account using the following commands.
+		git add . --all   
+		git commit -m "your comment"
+		git push -u origin master
+	
+4. Git log
+	使用git log命令查看版本库里面版本的信息
+		```
+		$ git log 
+		commit 3f69272d7fa0202c284c752f1be8719b9961fc54
+		Author: ahljljj <jliang0718@outlook.com>
+		Date:   Mon Nov 15 12:47:45 2021 -0500
+
+			Update 2070. Most Beautiful Item for Each Query.py
+
+		commit 2b28d46edd4bdac20040061c7563755c541ee394
+		Author: ahljljj <jliang0718@outlook.com>
+		Date:   Mon Nov 15 12:40:40 2021 -0500
+
+			Create 2070. Most Beautiful Item for Each Query.py
+		```
+	git log`--pretty=oneline`参数**简化**
+		```
+		$ git log --pretty=oneline
+		38d13516a6df4de83e62e719e3941955c7a4fdf4 (HEAD -> master, origin/master, origin/HEAD) Update 368. Largest Divisible Subset.py
+		550e3b41b635cd8c70c3fa988fab31263164638c Update 368. Largest Divisible Subset.py
+		3f69272d7fa0202c284c752f1be8719b9961fc54 Update 2070. Most Beautiful Item for Each Query.py
+		2b28d46edd4bdac20040061c7563755c541ee394 Create 2070. Most Beautiful Item for Each Query.py
+		5435336d3343d4fa9f4b264c29182d83284fed3d Create 2069. Walking Robot Simulation II.py
+		1ec802cc607cfaa89ce932333e52387c5161828e Create 2068. Check Whether Two Strings are Almost Equivalent.py
+		68e2c6c2fef9ddd10e7e447567ad6e834400c0b8 Create 1522. Diameter of N-Ary Tree.py
+		4c30b4c5b8bf17464184a16f5b2919621dce653f Create 1286. Iterator for Combination.py
+		f54d909c6f46379a961e83b55c3b99b79a4325b8 Create 1530. Number of Good Leaf Nodes Pairs.py
+		ce5320f1ac0ff7406a825370d483b36ac5a38873 Create 1529. Bulb Switcher IV.py
+		00dee1afe09a86cb997ae78caf2e043de9107c75 Create 1528. Shuffle String.py
+		52f18d6b03807d12eeb0124ae5419f24b195c912 Update 739. Daily Temperatures.py
+		d626b4ba900c557e44379372504ef1679281848f Create 1537. Get the Maximum Score.py
+		232bdbf95b1fad2e885cf5f14428a76bd39fe917 Update 1536. Minimum Swaps to Arrange a Binary Grid.py
+		```
