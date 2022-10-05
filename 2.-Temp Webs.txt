@@ -26,3 +26,6 @@ Online Courses
 
 python 导入模块
 	- http://c.biancheng.net/view/4645.html
+
+想找data science的实习应该怎么刷题？
+	- https://www.1point3acres.com/bbs/thread-287585-1-1.html
