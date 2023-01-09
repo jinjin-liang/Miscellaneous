@@ -29,3 +29,5 @@ python 导入模块
 
 想找data science的实习应该怎么刷题？
 	- https://www.1point3acres.com/bbs/thread-287585-1-1.html
+
+Describe a time when you have worked as part of a successful team. What role did you play and what were the challenges you encountered?
