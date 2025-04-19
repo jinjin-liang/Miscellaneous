@@ -1,0 +1,3 @@
+Default root of the Jupyter explorer is the current location (directory) where you start the Jupyter server. With the explorer, you can only navigate to all levels of the children directories, but not the parent's of that location. There is an option to set the root directory --notebook-dir when you start Jupyter. Here is an example command that starts Jupyter server and sets the root at D:/my_works/jupyter_ipynbs
+
+jupyter notebook --notebook-dir D:/my_works/jupyter_ipynbs
